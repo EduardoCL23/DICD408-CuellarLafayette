@@ -27,7 +27,8 @@ print(wine_data.isnull().sum())
 print(wine_quality_data.isnull().sum())
 
 # Normalizing "alcohol" colum in the wine_data using Min-Max normalization
-wine_data["alcohol"] = (wine_data["alcohol"])
+wine_data['alcohol'] = (wine_data['alcohol'] - wine_data['alcohol'].min()) / (wine_data['alcohol'].max() 
+- wine_data['alcohol'].min())
 
 
 # Loading
