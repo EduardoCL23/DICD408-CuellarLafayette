@@ -31,6 +31,7 @@ wine_data['alcohol'] = (wine_data['alcohol'] - wine_data['alcohol'].min()) / (wi
 - wine_data['alcohol'].min())
 
 
+
 # Loading
 # Saving the transformed datas as a csv file
 wine_data.to_csv("wine_dataset.csv", index = False)
